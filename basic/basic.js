@@ -1,8 +1,28 @@
 console.log("Basic ");
 
+/*
+let number = 9;
+
+switch (number) {
+  case 9:
+    console.log("9 value");
+    break;
+  case 1:
+    console.log("111 value");
+    break;
+  default:
+    console.log("Defaul data");
+    break;
+}
+
+*/
+
+/*
 (function (data) {
   console.log(data);
 })(5);
+
+*/
 
 /*
 console.log(var1);
