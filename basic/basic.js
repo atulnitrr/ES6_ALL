@@ -1,4 +1,14 @@
 console.log("Basic ");
+
+(function (data) {
+  console.log(data);
+})(5);
+
+/*
+console.log(var1);
+var var1 = 34;
+*/
+/*
 let varObject = {
   name: "atul",
   greet(data) {
@@ -14,6 +24,8 @@ const gt = varObject.greet;
 
 console.log(varObject);
 console.log(typeof varObject);
+
+*/
 /*
 const data = [1, 2, 3];
 console.log(data[7]);
