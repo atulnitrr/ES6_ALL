@@ -5,9 +5,33 @@ No of ways to create java script object
 2. Object constructor.   new Object();
 3. Object.create() --> it set prototype to Object
 4. Constructor function --> 
-5. Bind you are binding this value and may call later 
+5. Bind you are binding this value and may call 
+later 
+6. Create and delete property 
 */
+/*
+var account = {
+  cash: 1200,
+  withdraw(amount) {
+    this.cash -= amount;
+    console.log(`Took cash ${amount} current balance : ${this.cash}`);
+  },
+  balance() {
+    console.log(`balacne ${this.cash}`);
+  },
+};
 
+Object.defineProperty(account, "deposit", {
+  value: function (amount) {
+    this.cash += amount;
+    console.log(`addd amount ${amount} balance : ${this.cash}`);
+  },
+});
+
+account.balance();
+account.deposit(200);
+account.withdraw(100);
+*/
 /*
 var person = {
   name: "autl",
