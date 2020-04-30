@@ -7,8 +7,29 @@ No of ways to create java script object
 4. Constructor function --> 
 5. Bind you are binding this value and may call 
 later 
-6. Create and delete property 
+6. Create and delete property using defineProperty
+7. Delete , in 
 */
+
+var person = {
+  name: "Atul",
+  age: 34,
+  greet() {
+    console.log("Hello in greet");
+  },
+};
+
+for (var field in person) {
+  console.log(field);
+  console.log(person[field]);
+}
+console.log("name" in person); // true
+console.log("Name" in person); // false
+
+delete person.name;
+console.log(person.name);
+
+console.log(person);
 /*
 var account = {
   cash: 1200,
