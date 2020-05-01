@@ -6,8 +6,36 @@ console.log("event js");
  * 3. event handler vs event listener
  * 4. event listner
  * 5. event.stopProgation()
+ * 6. event.target, clientX, clientY
  */
 
+/*
+var checkBox = document.querySelector("#check");
+checkBox.addEventListener("click", (event) => {
+  event.preventDefault();
+  console.log("clicked");
+});
+console.log(checkBox);
+*/
+/*
+var array = [1, 2, 3];
+var dd = array.includes(2);
+console.log(dd);
+
+var inner = document.querySelector(".inner");
+inner.addEventListener("click", (event) => {
+  console.log("postion", event.clientX, event.clientY);
+  var classes = event.target.classList;
+  var redPreseent = Array.from(classes).some((e) => Object.is(e, "red"));
+
+  if (redPreseent) {
+    classes.remove("red");
+  } else {
+    classes.add("red");
+  }
+});
+
+*/
 /*
 var inner = document.querySelector("#inner");
 var outer = document.querySelector("#outer");
