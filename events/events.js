@@ -5,8 +5,10 @@ console.log("event js");
  * 2. bt.onclick -->? have issue when you have multipe function to call
  * 3. event handler vs event listener
  * 4. event listner
+ * 5. event.stopProgation()
  */
 
+/*
 var inner = document.querySelector("#inner");
 var outer = document.querySelector("#outer");
 inner.addEventListener(
@@ -15,8 +17,8 @@ inner.addEventListener(
     console.log(event.bubbles);
     event.stopPropagation();
     console.log("inner");
-  }
-  // true
+  },
+  true
 );
 
 outer.addEventListener(
@@ -26,6 +28,8 @@ outer.addEventListener(
   }
   // true
 );
+*/
+
 /*
 var btn = document.querySelector("button");
 
