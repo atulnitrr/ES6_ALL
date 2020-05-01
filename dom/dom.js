@@ -10,10 +10,17 @@ console.log("dom js");
  * 7. Query selector -> best way
  * 8 . Create a new elements
  * 9. Remove mthod in
+ * 10 . parentNode can be node of any type apart from html elements
+ * 11. dialog . alert , confirm
  */
 
+// alert("Hello ");
+// console.log(confirm("Are you sure"));
+// console.log(prompt("your name"));
+/*
 var a = document.querySelectorAll("a")[1];
 a.parentElement.removeChild(a);
+*/
 // a.remove(); // new browser
 
 /*
