@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  height: 100%;
+  width: 100%;
+  padding: 10px 10px;
+  margin: 10px 10px;
+}
+
+#dog {
+  height: 200px;
+  width: 200px;
+}
