@@ -2,12 +2,36 @@ console.log("Event http js");
 /**
  * 1. Get request
  * 2. Post request
- * 3. fetch
+ * 3. fetch, get and post
  *
  */
 
 /*
+var data = {
+  title: "tt",
+  body: "foo",
+  userId: 34,
+};
 
+var url = "https://jsonplaceholder.typicode.com/posts";
+
+fetch(url, {
+  method: "GET",
+})
+.then((d) => d.json())
+.then((value) => console.log(value));
+
+fetch(url, {
+  method: "post",
+  body: JSON.stringify(data),
+  headers: {
+    "Content-type": "application/json; charset=UTF-8",
+  },
+})
+  .then((data) => data.json())
+  .then((value) => console.log(value));
+*/
+/*
 var url = "https://jsonplaceholder.typicode.com/posts";
 const post_method = "POST";
 
