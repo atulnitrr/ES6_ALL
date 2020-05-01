@@ -7,6 +7,26 @@ console.log("event js");
  * 4. event listner
  */
 
+var inner = document.querySelector("#inner");
+var outer = document.querySelector("#outer");
+inner.addEventListener(
+  "click",
+  (event) => {
+    console.log(event.bubbles);
+    event.stopPropagation();
+    console.log("inner");
+  }
+  // true
+);
+
+outer.addEventListener(
+  "click",
+  () => {
+    console.log("Outer");
+  }
+  // true
+);
+/*
 var btn = document.querySelector("button");
 
 function listner(event) {
@@ -21,7 +41,7 @@ btn.addEventListener("click", () => {
 setTimeout(() => {
   btn.removeEventListener("click", listner);
 }, 2000);
-
+*/
 /*
 window.onload = () => {
   console.log("Window loaded");
