@@ -17,6 +17,7 @@ checkBox.addEventListener("click", (event) => {
 });
 console.log(checkBox);
 */
+
 /*
 var array = [1, 2, 3];
 var dd = array.includes(2);
